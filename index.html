@@ -173,7 +173,8 @@ justify-content: center;
 }
 </style>
 <script>
-      document.getElementById("whatsapp-contact").addEventListener("submit", function(e) {
+      <script>
+  document.getElementById("whatsapp-contact").addEventListener("submit", function(e) {
     e.preventDefault(); // Stops page reload
     
     // Get form values
@@ -182,7 +183,7 @@ justify-content: center;
     const message = document.getElementById("message").value;
     
     // Format the WhatsApp message
-    const whatsappText = `The feedback and update%0A%0A👤 Name: ${name}%0A📧 Email: ${email}%0A📝 Message: ${message}`;
+    const whatsappText = `📌Feedback or Update or complaint!%0A%0A👤 Name: ${name}%0A📧 Email: ${email}%0A📝 Message: ${message}`;
     
     // Replace YOUR_PHONE_NUMBER (with country code, no + or spaces)
     const whatsappUrl = `https://wa.me/254758838157?text=${whatsappText}`;
@@ -190,6 +191,7 @@ justify-content: center;
     // Open WhatsApp in a new tab (seamless)
     window.open(whatsappUrl, "_blank");
   });
+</script>
    
 </script>
 </body>
